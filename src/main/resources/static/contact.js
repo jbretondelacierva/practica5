@@ -28,7 +28,6 @@ const mostrarLastContact = async () => {
     });
     if(request.ok) {
         let contacto = await request.json();
-        console.log("hola1");
         console.log(contacto);
         let texto = "<b>Mensaje enviado con exito</b></br><i>" + contacto.name + "! recibiras noticias nuestras en "
             + contacto.email + " próximamente</i>";
